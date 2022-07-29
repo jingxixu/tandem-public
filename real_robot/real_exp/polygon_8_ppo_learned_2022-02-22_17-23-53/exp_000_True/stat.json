@@ -1,0 +1,8 @@
+{
+    "0_actions": "27",
+    "0_explored_pixels": "25",
+    "0_exploration-rate": "0.9259259259259259",
+    "0_success": "True",
+    "0_gt": "8",
+    "0_prediction": "8"
+}

@@ -1,0 +1,2 @@
+semisphere diameter: 0.0375m
+cylinder height: 0.05m

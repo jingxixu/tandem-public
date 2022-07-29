@@ -1,0 +1,11 @@
+{
+    "reward": 0.0,
+    "reward_std": 0.0,
+    "actions": 95.0,
+    "actions_std": 0.0,
+    "explored_pixels": 69.0,
+    "explored_pixels_std": 0.0,
+    "exploration_rate": 0.7263157894736842,
+    "exploration_rate_std": 0.0,
+    "success_rate": 1.0
+}
