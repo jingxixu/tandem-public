@@ -100,8 +100,7 @@ def get_args():
     parser.add_argument('--exp_knob', type=int)
     parser.add_argument('--num_orientations', type=int, default=10)
     parser.add_argument('--num_rotations', type=int, default=1)
-    parser.add_argument('--dataset', type=str,
-                        help='the dataset to use')
+    parser.add_argument('--dataset', type=str, default='extruded_polygons_r_0.1_s_8_h_0.05', help='the dataset to use')
     parser.add_argument('--use_correctness', type=lambda x: bool(strtobool(x)), default=False, nargs='?', const=True)
     parser.add_argument('--collect_initial_batch', type=lambda x: bool(strtobool(x)), default=True, nargs='?', const=True,
                         help='whether we collect an initial batch of data to train the discriminator before updating the explorer')

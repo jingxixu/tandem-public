@@ -78,7 +78,7 @@ python train_rl_ppo.py \
 --sensor_noise 0.005
 ```
 
-To rain the _Edge-follower_ baseline,
+To train the _Edge-follower_ baseline,
 
 ```sh
 python train_discriminator_with_fixed_explorer.py \
@@ -153,7 +153,6 @@ python enjoy_floating_finger.py \
 --explorer_path assets/models/tandem_noise_0005/explorer_model.pth \
 --sensor_noise 0.005 \
 --save_npy --exp_name tandem \
-# remove the line below to tun headless without pybullet and occupancy grid visualization
 --render_pybullet --render_ob
 ```
 
@@ -166,9 +165,10 @@ python enjoy_floating_finger.py \
 --explorer edge \
 --sensor_noise 0.005 \
 --save_npy --exp_name edge \
-# remove the line below to tun headless without pybullet and occupancy grid visualization
 --render_pybullet --render_ob
 ```
+
+You can remove `--render_pybullet --render_ob` to run headless without pybullet and occupancy grid visualization.
 
 This script will create a folder named `[EXP_NAME]_[DATE]_[TIME]`. You can visualize the table of results and final occupancy grid visualization at termination by opening `[EXP_NAME]_[DATE]_[TIME]/html/index.html` with your browser. It should look like the below screenshot.
 
